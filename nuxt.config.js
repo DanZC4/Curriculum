@@ -50,7 +50,8 @@ export default {
         extend: {    
           spacing: {
             '100': '30rem',
-            '134': '36rem',
+            '134': '37rem',
+            '138': '38rem',
             '140': '40rem',
             '143': '43rem',
             '145': '45rem',
@@ -64,9 +65,16 @@ export default {
             '164': '64rem',
             '166': '66rem',
             '168': '68rem',
-            '172': '76rem',
+            '169': '69rem',
+            '170': '70rem',
+            '172': '72rem',
+            '174': '74rem',
+            '188': '88rem',
+            '190': '90rem',
             '196': '96rem',
             '204': '104rem',
+            '238': '138rem',
+            '244': '144rem',
             '1/2': '50%',
           },
           maxWidth: {
@@ -83,23 +91,20 @@ export default {
              '16' : '16deg'
            },
            screens: {
-            '2xl': {'min': '1535px'},
-            // => @media (min-width: 1535px) { ... }
-            '1xl': {'min': '1435px'},
-      
-            'xl': {'min': '1279px'},
-            // => @media (min-width: 1279px) { ... }
-      
-            'lg': {'min': '1023px'},
-            // => @media (min-width: 1023px) { ... }
-      
-            'md': {'min': '767px'},
-            // => @media (min-width: 767px) { ... }
-      
-            'sm': {'min': '620px'},
-            // => @media (min-width: 639px) { ... }
+            'cel': {'min': '418px'},
             'ant': {'min': '460px'},
-          }
+            '2xl': {'min': '1535px'},
+            'sm': {'min': '620px'},
+            'md': {'min': '767px'},
+            'lg': {'min': '1023px'},
+            'lt': {'min': '1120px'},
+            'xl': {'min': '1279px'},
+            '1xl': {'min': '1435px'},
+            '1.5xl': {'min': '1472px'},
+          },
+          zIndex: {
+            'men10': '-10',
+           }
          
         }
       }

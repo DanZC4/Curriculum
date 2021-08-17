@@ -9,28 +9,28 @@
           DZC
         </h1>
       </div>
-      <div class="" :class="{'bg-white text-gray-900':darkmode, 'bg-gray-800 text-gray-100':lightmode}">
+      <div class="" :class="{'bg-white text-gray-900':darkmode, 'bg-gray-800  text-gray-100':lightmode}">
         <nav class="text-xl font-bold flex w-full justify-center sm:justify-end">
           <ul class="ant:flex space-x-2 px-6 py-2.5 hidden">
             
             <li>
               <a
                 v-scroll-to="'#about'"
-                class="p-2 hover:text-gray-700 transition duration-700"
+                class="p-2 hover:text-gray-400 transition duration-700"
                 >My Proyects</a
               >
             </li>
              <li>
               <a
                 v-scroll-to="'#proyects'"
-                class="p-2 hover:text-gray-700 transition duration-700"
+                class="p-2 hover:text-gray-400 transition duration-700"
                 >Why hire me?</a
               >
             </li>
             <li>
               <a
                 v-scroll-to="'#contact'"
-                class="p-2 hover:text-gray-700 transition duration-700"
+                class="p-2 hover:text-gray-400 transition duration-700"
                 >Contact Me</a
               >
             </li>
