@@ -27,8 +27,8 @@
 export default {
   data() {
     return {
-      darkmode: false,
-      lightmode: true,
+      darkmode: true,
+      lightmode: false,
     };
   },
   methods: {

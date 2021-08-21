@@ -5,16 +5,16 @@
         <h2 class="font-bold text-2xl mb-2">Contact Me</h2>
         <ul class="space-y-2">
           <li class="hover:text-gray-300 transition duration-700">
-            <a href="">Linkedin</a>
+            <a href="https://www.linkedin.com/in/daniel-zambrano-840062216/">Linkedin</a>
           </li>
           <li class="hover:text-gray-300 transition duration-700">
-            <a href="">Github</a>
+            <a href="https://github.com/DanZC4">Github</a>
           </li>
           <li class="hover:text-gray-300 transition duration-700">
-            <a href="">daniel@gamehour.app</a>
+            <a href="mailto:daniel@gamehour.app? subject = Feedback&body = Hello Mr. Daniel">daniel@gamehour.app</a>
           </li>
           <li class="hover:text-gray-300 transition duration-700">
-            <a href="">551234678</a>
+            <a href="https://api.whatsapp.com/send?phone=5532478092&text=Hello,%20How%20are%20you?">5532478092</a>
           </li>
         </ul>
       </div>
