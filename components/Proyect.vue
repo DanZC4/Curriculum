@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div class="relative z-10"
     :class="{
       'bg-gray-700': darkmode,
       '  bg-gray-200   ': lightmode,

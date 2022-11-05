@@ -1,30 +1,34 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center overflow-hidden">
     <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-24 ant:pt-36 max-w-12xl">
-      <div class="flex flex-col items-center mb-8 sm:pt-36">
-        <div class="w-60 h-60 border-black rounded-full overflow-hidden">
-          <img
-            src="../static/img/daniel.jpg"
-            alt=""
-            class="
-              h-full
-              w-full
-              transform
-              hover:scale-110
-              duration-200
-              object-cover
-            "
-          />
-        </div>
-        <h2 class="p-4 font-bold text-3xl">Web Develoment Jr</h2>
+      <div class=" text-gray-900 ant:border-b-2 border-gray-800">
+        <nav class="text-xl font-bold flex w-full justify-center sm:justify-end">
+          <ul class="ant:flex space-x-2 py-2.5 hidden">
+
+            <li>
+              <a href="#about" v-scroll-to="'#about'" class="p-2 hover:text-gray-700 transition duration-300">My
+                Proyects</a>
+            </li>
+            <li>
+              <a href="#proyects" v-scroll-to="'#proyects'"
+                class="p-2 hover:text-gray-700 transition duration-300">Abilities</a>
+            </li>
+            <li>
+              <a href="#contact" v-scroll-to="'#contact'"
+                class="p-2 hover:text-gray-700 transition duration-300">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div
-        class="p-4 duration-300"
-        :class="{
-          ' text-gray-900': darkmode,
-          ' text-gray-100': lightmode,
-        }"
-      >
+      <div class="flex flex-col items-center mb-8 sm:pt-16">
+        <kunai></kunai>
+        <h2 class="p-4 font-bold text-4xl">Web Develoment</h2>
+
+      </div>
+      <div class="p-4 duration-300" :class="{
+        ' text-gray-900': darkmode,
+        ' text-gray-100': lightmode,
+      }">
         <div class="mb-16 ant:mb-36">
           <div class="mb-2 flex justify-between">
             <h2 class="text-3xl font-bold">Who I am?</h2>
@@ -47,7 +51,13 @@
 </template>
 
 <script>
+
+import kunai from './Icons/Kunai.vue'
+
 export default {
+  components: {
+    kunai
+  },
   props: {
     darkmode: Boolean,
     lightmode: Boolean,
