@@ -1,28 +1,14 @@
 <template>
   <div
-    class="flex justify-center transform duration-300"
-    :class="{
-      'bg-gray-100 text-gray-900':
-        darkmode,
-      ' bg-gray-800  text-gray-100':
-        lightmode,
-    }">
+    class="flex justify-center transform duration-300 bg-gray-100  text-gray-800">
     <div class="w-full ">
-     <Header :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode" />
-     <Proyect :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode" 
+     <Header :darkmode="darkmode" />
+     <Proyect :darkmode="darkmode" 
         :pages="pages"/>
         <Abilities :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode"
         :tecnologies="tecnologies"
         />
-        <Contact :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode"/>
+        <Contact :darkmode="darkmode"/>
     </div>
   </div>
 </template>
@@ -39,6 +25,18 @@ export default {
           name: 'Manor Lodge',
           image: 'ManorLodge.png',
           link: 'https://www.manorlodgedentalsurgery.co.uk/'
+        },
+        {
+            id: 2,
+          name: 'Manor Lodge',
+          image: 'ManorLodge.png',
+          link: 'https://www.manorlodgedentalsurgery.co.uk/'
+        },
+        {
+            id: 3,
+          name: 'Smiley',
+          image: 'smiley.png',
+          link: 'https://smiley.mx/'
         },
       ],
       tecnologies: [
@@ -102,8 +100,6 @@ export default {
   
   props: {
     darkmode: Boolean,
-    lightmode: Boolean,
-    chancheMode: Function,
   },
 };
 </script>

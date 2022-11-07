@@ -3,22 +3,17 @@
     <transition name="page">
       <Nave
         :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode"
+        @darkmode="darkmode = !darkmode"
       />
     </transition>
         <transition name="page">
       <Page
         :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode"
       />
     </transition>
     <transition name="page">
       <Footer
         :darkmode="darkmode"
-        :lightmode="lightmode"
-        :chancheMode="chancheMode"
       />
     </transition>
   </div>
@@ -27,18 +22,8 @@
 export default {
   data() {
     return {
-      darkmode: true,
-      lightmode: false,
+      darkmode: false,
     };
-  },
-  methods: {
-    chancheMode() {
-      if (this.darkmode == true && this.lightmode == false) {
-        return (this.darkmode = false), (this.lightmode = true);
-      } else {
-        return (this.darkmode = true), (this.lightmode = false);
-      }
-    },
   },
 };
 </script>

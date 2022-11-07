@@ -1,18 +1,11 @@
 <template>
   <div
-    :class="{
-      'bg-gray-700': darkmode,
-      '  bg-gray-200   ': lightmode,
-    }"
+    class="bg-gray-200"
   >
   <div class="flex justify-center">
     <div class="px-0 sm:px-24 md:px-36 w-200 lg:px-48 pt-12 a max-w-12xl ">
       <div
-        class="mb-16 duration-300"
-        :class="{
-          ' text-gray-100': darkmode,
-          '  text-gray-900': lightmode,
-        }"
+        class="mb-16 duration-300 text-gray-900"
       >
         <div class="mb-8 text-center">
           <div class="mb-10 flex justify-center">
@@ -105,7 +98,6 @@
           "
         >
           <div
-            :class="{ 'bg-gray-700': darkmode, 'bg-gray-200': lightmode }"
             class="
               duration-200
               rounded-full
@@ -116,6 +108,7 @@
               items-center
               transform
               hover:translate-y-4 hover:translate-x-3
+              bg-gray-200
             "
           >
             <div class="rounded-full w-6 h-6 bg-gray-900 transform"></div>
@@ -130,9 +123,7 @@
 export default {
   props: {
     darkmode: Boolean,
-    lightmode: Boolean,
-    chancheMode: Function,
-    tecnologies: Array,
+
   },
 };
 </script>

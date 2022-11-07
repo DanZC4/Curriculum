@@ -49,34 +49,18 @@
         <div>
           <h2 class="font-bold text-2xl mb-2">Dark Mode</h2>
           <button
-          :class="{'bg-white text-gray-900 border-white':darkmode, 'bg-gray-800 text-gray-100 border-gray-800 ': lightmode}"
             class="
               font-bold
+              bg-gray-800 text-gray-100 border-gray-800 
               border-4  py-1 px-4 rounded
             "
-            @click="chancheMode()"
+            @click=""
            
           >
-            <span  v-if="darkmode == true">Dark</span>
-                <span v-else>Ligth</span>
+            <span>Dark</span>
           </button>
         </div>
-        <div class="hidden">
-          <h2 class="font-bold text-2xl mb-2">Ligth Mode</h2>
-          <button
-            class="
-              border-4 border-black
-              py-1
-              px-4
-              rounded
-              text-gray-100
-              bg-gray-900
-              font-bold
-            "
-          >
-            Ligth
-          </button>
-        </div>
+        
       </div>
     </div>
     <div class="pt-10 text-center">
@@ -88,8 +72,6 @@
 export default{
   props:{
     darkmode: Boolean,
-    lightmode: Boolean,
-    chancheMode: Function
   }
 }
 </script>

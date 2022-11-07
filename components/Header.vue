@@ -22,13 +22,9 @@
       </div>
       <div class="flex flex-col items-center mb-8 sm:pt-16">
         <kunai></kunai>
-        <h2 class="p-4 font-bold text-4xl">Web Develoment</h2>
-
+        <h2 class="p-4 font-bold text-4xl">Ninja Web Develoment</h2>
       </div>
-      <div class="p-4 duration-300" :class="{
-        ' text-gray-900': darkmode,
-        ' text-gray-100': lightmode,
-      }">
+      <div class="p-4 duration-300 " >
         <div class="mb-16 ant:mb-36">
           <div class="mb-2 flex justify-between">
             <h2 class="text-3xl font-bold">Who I am?</h2>
@@ -60,8 +56,6 @@ export default {
   },
   props: {
     darkmode: Boolean,
-    lightmode: Boolean,
-    chancheMode: Function,
   },
 };
 </script>

@@ -9,6 +9,10 @@
                 :class="kunai ? '-translate-x-[20rem] -translate-y-[20rem]' : ''">
                 <img src="~/static/img/kunai.svg" alt="" width="80" height="80">
             </div>
+            <div class=" transform duration-300 absolute z-0"
+                :class="kunai ? '-translate-x-[36rem] -translate-y-[19rem] rotate-[336deg]' : ''">
+                <img src="~/static/img/shuriken.svg" alt="" width="60" height="60">
+            </div>
             <div class=" transform duration-300 absolute z-0 rotate-[135deg]" :class="kunai ? '-translate-y-[19rem]' : ''">
                 <img src="~/static/img/kunai.svg" alt="" width="80" height="80">
             </div>
@@ -26,7 +30,7 @@
             </div>
 
         </div>
-        <div class="w-60 h-60 border-black rounded-full overflow-hidden m-auto " v-on:mouseover="mouseover">
+        <div class="w-60 h-60 rounded-full overflow-hidden m-auto " v-on:mouseover="kunai = true">
             <img src="~/static/img/exodya_face.png" alt="" class="
               h-full
               w-full
@@ -45,13 +49,6 @@ export default {
         return {
             kunai: false
         }
-
-    },
-    methods: {
-        mouseover: function () {
-            this.kunai = true
-        },
-
     }
 
 }
