@@ -14,14 +14,14 @@
           <div>
 
             <button class="top-0  w-16 -rotate-[20deg]  flex" @click="$emit('darkmode')">
-              <div class="h-3 w-1 border-x-2 border-t-2 border-orange-900 m-auto bg-orange-900"></div>
-              <div class="h-6 w-full border  flex items-center" :class="darkmode ? 'border-gray-700 bg-gray-700' : 'border-gray-100 bg-gray-100'">
+              <div class="h-3 w-1 border-x-2 border-t-2 border-orange-900 m-auto bg-orange-900 rounded-t"></div>
+              <div class="h-6 w-full border  flex items-center rounded-sm" :class="darkmode ? 'border-gray-700 bg-gray-700' : 'border-gray-100 bg-gray-100'">
                 <div :class="darkmode ? 'text-gray-900 border-gray-900 mx-auto bg-gray-100' : 'text-gray-100 border-gray-100 mx-auto bg-gray-800'"
                   class="h-6 w-5 border-y  font-bold text-center text-sm rotate-90">
                   {{ darkmode ? '輝' : '暗'}}
                 </div>
               </div>
-              <div class="h-3 w-1 border-x-2 border-b-2 border-orange-900 m-auto bg-orange-900"></div>
+              <div class="h-3 w-1 border-x-2 border-b-2 border-orange-900 m-auto bg-orange-900 rounded-b"></div>
             </button>
           </div>
         </div>

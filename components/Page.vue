@@ -28,9 +28,9 @@ export default {
         },
         {
             id: 2,
-          name: 'Manor Lodge',
-          image: 'ManorLodge.png',
-          link: 'https://www.manorlodgedentalsurgery.co.uk/'
+          name: 'Devon Independent',
+          image: 'DevonIndependent.png',
+          link: 'https://devon-ipg.org/'
         },
         {
             id: 3,
