@@ -55,42 +55,6 @@ export default {
         {
           name:'PHP',
           color:'text-black bg-gradient-to-tl from-purple-900  to-blue-500'
-        },
-        {
-          name:'Laravel',
-          color:'text-red-600 bg-gradient-to-tl from-black via-black to-gray-900'
-        },
-          {
-          name:'VUE',
-          color:'text-white  bg-gradient-to-tl from-green-500 to-gray-200'
-        },
-          {
-          name:'node.js',
-          color:'text-green-600 bg-gray-800'
-        },
-          {
-          name:'GIT',
-          color:'text-black bg-gradient-to-tl from-yellow-500 to-red-500'
-        },
-           {
-          name:'Github',
-          color:'text-white bg-gradient-to-tl from-gray-800 to-gray-700'
-        },
-          {
-          name:'Gitlab',
-          color:'text-white bg-gradient-to-tr from-red-500 to-yellow-400'
-        },
-          {
-          name:'Tailwind',
-          color:'text-white bg-gradient-to-tl from-green-400 to-blue-300'
-        },
-            {
-          name:'TS',
-          color:'text-white bg-blue-700'
-        },
-            {
-          name:'Graphql',
-          color:'text-white bg-pink-600'
         }
 
       ]
