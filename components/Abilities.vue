@@ -12,6 +12,7 @@
       </div>
 
     </div>
+    <!-- abilidades -->
     <div class="flex justify-center">
       <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-20 max-w-12xl">
         <div class="p-4 mb-16 duration-300  text-gray-800">
@@ -124,7 +125,7 @@
     <div class="w-full">
       <div class="">
         <!-- Dart Vader -->
-        <div class="bg-white w-52 h-auto mx-auto">
+        <div class=" w-52 h-auto mx-auto">
           <!-- head -->
           <div class="flex flex-col items-center ">
             <div class="translate-y-5 z-20">
@@ -181,12 +182,89 @@
 
 
           </div>
+          <!-- neck -->
           <div class="flex flex-col items-center ">
             <div class="w-8 h-1 bg-gray-500 -translate-y-2 z-0"></div>
-            <div class="w-[2.25rem] h-4 bg-green-800 -translate-y-2 z-0 rounded-[2px]"></div>
+            <div class="w-[2.25rem] h-2 bg-green-800 -translate-y-2 z-0 rounded-t-[2px]"></div>
+            <div class="w-[2.50rem] h-2 bg-green-800 -translate-y-2 z-0 rounded-t-[2px]">
+
+            </div>
+            <div class="w-[3rem] absolute h-1 bg-green-800 translate-y-2.5 z-30 rounded-t-full"></div>
           </div>
+          <!-- torso -->
           <div class="flex flex-col items-center ">
-            <div class="w-[5rem] h-[6rem] bg-gray-400 -translate-y-2  rounded-md"></div>
+            <div>
+              <!-- arm -->
+              <div class="absolute">
+                <div
+                  class="h-[1.2rem] w-[0.8rem] translate-y-[1.8rem] -rotate-[65deg] -translate-x-[0.8rem] absolute z-20 bg-gray-900 ">
+                </div>
+                <div
+                  class="w-[4rem] h-[1.2rem]  translate-y-[1.6rem] -rotate-[65deg] -translate-x-[2.3rem] rounded-l-full bg-gray-400">
+                </div>
+                <!-- hand -->
+                <div class="">
+                  <div
+                    class="h-[1.8rem] w-[1.4rem] translate-y-[0.30rem]  hand -rotate-[45deg] -translate-x-[4.5rem] absolute z-20 bg-gray-600 ">
+                  </div>
+                  <div
+                    class="h-[1rem] w-[0.4rem] translate-y-[0.50rem]   -rotate-[25deg] -translate-x-[3.3rem] absolute z-20 bg-gray-600 border-l border-gray-800">
+                  </div>
+                  <div
+                    class="h-[0.2rem] w-[1.2rem] translate-y-[1.75rem]   -rotate-[45deg] -translate-x-[3.7rem] absolute z-20 bg-gray-800 ">
+                  </div>
+                </div>
+
+                <div
+                  class="w-[3rem] h-[1rem]  translate-y-[1.8rem] rotate-[20deg] rounded-br-full -translate-x-[3.4rem]  bg-gray-400">
+                </div>
+
+              </div>
+              <!-- arm -->
+              <div class="absolute rotate-Y ">
+                <div
+                  class="h-[1.2rem] w-[0.8rem] translate-y-[1.8rem] -rotate-[65deg] -translate-x-[0.8rem] absolute z-20 bg-gray-900 ">
+                </div>
+                <div
+                  class="w-[4rem] h-[1.2rem]  translate-y-[1.6rem] -rotate-[65deg] -translate-x-[2.3rem] rounded-l-full bg-gray-400">
+                </div>
+                <!-- hand -->
+                <div class="">
+                  <div
+                    class="h-[1.8rem] w-[1.4rem] translate-y-[0.30rem]  hand -rotate-[45deg] -translate-x-[4.5rem] absolute z-20 bg-gray-600 ">
+                  </div>
+                  <div
+                    class="h-[1rem] w-[0.4rem] translate-y-[0.50rem]   -rotate-[25deg] -translate-x-[3.3rem] absolute z-20 bg-gray-600 border-l border-gray-800">
+                  </div>
+                  <div
+                    class="h-[0.2rem] w-[1.2rem] translate-y-[1.75rem]   -rotate-[45deg] -translate-x-[3.7rem] absolute z-20 bg-gray-800 ">
+                  </div>
+                </div>
+
+                <div
+                  class="w-[3rem] h-[1rem]  translate-y-[1.8rem] rotate-[20deg] rounded-br-full -translate-x-[3.4rem]  bg-gray-400">
+                </div>
+
+              </div>
+              <div>
+                <div
+                  class="w-[1.5rem] h-5 rounded-b-full bg-gray-800 absolute -rotate-[25deg] z-10 -translate-y-[0.2rem] translate-x-[0.2rem] flex justify-center items-center">
+                  <div class="w-[0.4rem] h-[0.4rem] bg-gray-500 rounded-full border border-gray-900"></div>
+                </div>
+                <div
+                  class="w-[1.5rem] h-5 rounded-b-full bg-gray-800 absolute rotate-[25deg] z-10 -translate-y-[0.22rem] translate-x-[3.65rem] flex justify-center items-center">
+                  <div class="w-[0.4rem] h-[0.4rem] bg-gray-500 rounded-full border border-gray-900"></div>
+                </div>
+                <div class="w-[5.4rem] h-[6rem] bg-gray-600 -translate-y-2 torso"></div>
+                <div
+                  class="w-[5.9rem] h-0.5 bg-gray-800 absolute rotate-90 -translate-y-[3.5rem] -translate-x-[0.25rem]">
+                </div>
+              </div>
+
+
+
+            </div>
+
 
           </div>
         </div>
@@ -232,7 +310,16 @@ export default {
   clip-path: polygon(0% 10%, 8% 11%, 11% 21%, 22% 19%, 29% 17%, 34% 7%, 45% 3%, 48% 11%, 52% 14%, 55% 24%, 63% 24%, 67% 24%, 74% 20%, 77% 16%, 83% 13%, 89% 14%, 93% 21%, 100% 29%, 100% 100%, 0 100%);
 }
 
-.casco {
-  clip-path: polygon(41% 48%, 58% 48%, 83% 38%, 100% 100%, 0 100%, 16% 38%);
+.torso {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 11%, 86% 100%, 14% 100%, 0 11%);
+}
+
+.hand {
+  clip-path: polygon(50% 0%, 100% 26%, 84% 100%, 14% 100%, 0 17%);
+}
+
+.rotate-Y {
+  transform: rotateY(180deg);
+  translate: 1.4rem 0px;
 }
 </style>
