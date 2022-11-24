@@ -174,7 +174,7 @@
         </div>
       </div>
       <!-- jedie -->
-      <div class="w-full absolute -translate-y-[14rem]">
+      <div class="w-full absolute -translate-y-[14rem] overflow-x-hidden">
         <div class=" ">
           <div class=" w-52 h-auto mx-auto">
             <!-- head -->
