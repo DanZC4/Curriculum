@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bg-gradient-to-t from-gray-50  to-blue-400" ref="sky">
+  <div  :class="darkmode ? 'bg-blue-900' : 'bg-gradient-to-t from-gray-50  to-blue-400'" ref="sky">
     <!-- sky -->
     <div class="w-full">
       <div class="w-60 absolute right-96 transfrom translate-y-24">
@@ -30,8 +30,8 @@
 
     <!-- suelo -->
     <div class="w-full">
-      <div class="w-full h-[2rem] -mb-10 montanas bg-orange-200"></div>
-      <div class="w-full h-[4rem] -mb-2 arena bg-yellow-100"></div>
+      <div class="w-full h-[2rem] -mb-10 montanas " :class="darkmode ? ' bg-sky-700' : 'bg-orange-200'"></div>
+      <div class="w-full h-[4rem] -mb-2 arena" :class="darkmode ? ' bg-sky-600' : 'bg-yellow-100'"></div>
 
       <!-- tegnologies -->
       <div class="flex justify-center absolute w-full">
@@ -53,7 +53,7 @@
                   </div>
                   <!-- tailwind -->
                   <div class="sm:-translate-x-[12rem] -translate-x-[4rem] translate-y-[5rem] sm:-translate-y-[3rem] flex flex-col items-center">
-                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full" style=" transform: rotateX(-0.2turn);">
+                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full" style=" transform: rotateX(-0.2turn);" >
                     </div>
                     <div class=" sm:w-16 sm:h-16 w-10 h-10 bg-blue-100 rounded-lg -translate-y-[4.8rem] sm:-translate-y-[7rem]">
                       <svg class=" sm:w-16 sm:h-16 w-10 h-10 -rotate-[30deg]" id="Layer_1" data-name="Layer 1"
@@ -103,7 +103,7 @@
     </div>
 
     <!-- jedie -->
-    <Exodya></Exodya>
+    <Exodya :darkmode="darkmode"></Exodya>
 
     <!-- sable de exodya -->
 
@@ -113,7 +113,7 @@
 
 
 
-    <div class="w-full h-[24rem]  bg-yellow-100"></div>
+    <div class="w-full h-[24rem]  " :class="darkmode ? ' bg-sky-600' : 'bg-yellow-100'"></div>
   </div>
 
 
