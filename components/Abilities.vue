@@ -16,12 +16,13 @@
     <!-- abilidades -->
     <div class="w-full h-[28rem]">
       <div class="flex justify-center overflow-hidden">
-        <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-24 ant:pt-36 max-w-12xl">
-          
-          <h2 class="text-4xl text-black font-bold">S<span class="text-yellow-600">k</span>i<span class="text-gray-500">l</span><span class="text-yellow-600">l</span>s</h2>
+        <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-24 ant:pt-36 max-w-12xl 1xl:min-w-[100rem]">
+
+          <h2 class="text-4xl text-black font-bold">S<span class="text-yellow-600">k</span>i<span
+              class="text-gray-500">l</span><span class="text-yellow-600">l</span>s</h2>
 
           <div class="w-[28rem]">
-            <ObiWanSable></ObiWanSable>
+            <ObiWanSable :light_saber_obi_wan="light_saber_obi_wan" @sablerOn="light_saber_obi_wan = !light_saber_obi_wan"></ObiWanSable>
           </div>
         </div>
       </div>
@@ -127,7 +128,7 @@ import Exodya from './Monitos/Exodya.vue'
 export default {
   data() {
     return {
-
+      light_saber_obi_wan : false
     }
   },
   components: {
@@ -140,42 +141,33 @@ export default {
     darkmode: Boolean,
     tecnologies: Array,
   },
-  methods:{
-    turnOn(){
-       // esto es el tope de la pagina
+  methods: {
+    turnOn() {
+      // esto es el tope de la pagina
       let topScroll = document.documentElement.scrollTop;
 
       let altura = this.$refs.sky.offsetTop;
 
-      if (altura - 300 < topScroll) {
-        alert("hola")
-    }
+      if (altura - 200 < topScroll ) {
+        return this.light_saber_obi_wan = true
+      }
     }
   },
-  created () {
-    window.addEventListener('scroll', this.turnOn);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.turnOn);
-  },
-
-  /* let car = document.getElementById("car");
-
-function turnOn() {
-    // esto es el tope de la pagina
-    let topScroll = document.documentElement.scrollTop
-
-    //este es el tope de tu elemento
-    let altura = car.offsetTop;
-    // la condicion
-    if (altura - 400 < topScroll) {
-        car.classList.add("auto1")
+  created() {
+    let width;
+    if (typeof window !== "undefined") {
+      width = window.addEventListener('scroll', this.turnOn);
     }
-}
-
- */
-
-
+    /* window.addEventListener('scroll', this.turnOn); */
+    console.log(width)
+  },
+  destroyed() {
+    let width;
+    if (typeof window !== "undefined") {
+      width = window.removeEventListener('scroll', this.turnOn);
+    }
+    /*  window.removeEventListener('scroll', this.turnOn); */
+  },
 };
 </script>
 
