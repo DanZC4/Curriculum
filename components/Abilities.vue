@@ -1,28 +1,40 @@
 
 <template>
-  <div  :class="darkmode ? 'bg-blue-900' : 'bg-gradient-to-t from-gray-50  to-blue-400'" ref="sky">
+  <div :class="darkmode ? 'bg-blue-800' : 'bg-gradient-to-t from-gray-50  to-blue-400'" ref="sky">
     <!-- sky -->
     <div class="w-full">
       <div class="w-60 absolute right-96 transfrom translate-y-24">
+        <div :class="darkmode ? 'hidden' : 'block'">
+          <div class="w-12 h-12 bg-orange-50 rounded-full shadow-yellow-300 shadow-2xl"></div>
 
-        <div class="w-12 h-12 bg-orange-50 rounded-full shadow-yellow-300 shadow-2xl"></div>
+          <div class="flex justify-end opacity-0 1xl:opacity-100">
+            <div class="w-14 h-14 bg-orange-400 rounded-full shadow-orange-300 shadow-2xl"></div>
+          </div>
+        </div>
+        <div :class="darkmode ? 'block' : 'hidden'">
+          <div class="w-16 h-16 bg-blue-100 rounded-full  shadow-2xl ">
+            <div class="w-12 h-12 bg-blue-800 rounded-full"></div>
+          </div>
+          <!-- STARS -->
+          <div v-for="star in stars" :key="" class="w-1 h-1 bg-blue-50 rounded-full  shadow-2xl "
+            :class="star.position"></div>
 
-        <div class="flex justify-end opacity-0 1xl:opacity-100">
-          <div class="w-14 h-14 bg-orange-400 rounded-full shadow-orange-300 shadow-2xl"></div>
         </div>
       </div>
-
     </div>
     <!-- abilidades -->
     <div class="w-full h-[18rem] sm:h-[28rem]">
+      <!-- stars -->
+
       <div class="flex justify-center overflow-hidden">
         <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-24 ant:pt-36 max-w-12xl 1xl:min-w-[100rem]">
 
-          <h2 class="text-3xl sm:text-4xl -mt-6 sm:mt-0 text-black font-bold">S<span class="text-yellow-600">k</span>i<span
-              class="text-gray-500">l</span><span class="text-yellow-600">l</span>s</h2>
-
+          <h2 class="text-3xl sm:text-4xl -mt-6 sm:mt-0 text-black font-bold">S<span
+              class="text-yellow-600">k</span>i<span class="text-gray-500">l</span><span
+              class="text-yellow-600">l</span>s</h2>
           <div class="hidden sm:flex sm:w-[28rem]">
-            <ObiWanSable :light_saber_obi_wan="light_saber_obi_wan" @sablerOn="light_saber_obi_wan = !light_saber_obi_wan"></ObiWanSable>
+            <component :is="darkmode ? 'DarthVaderSable' : 'ObiWanSable'" :light_saber="light_saber"
+              @sablerOn="light_saber = !light_saber"></component>
           </div>
         </div>
       </div>
@@ -31,7 +43,7 @@
     <!-- suelo -->
     <div class="w-full">
       <div class="w-full h-[2rem] -mb-10 montanas " :class="darkmode ? ' bg-sky-700' : 'bg-orange-200'"></div>
-      <div class="w-full h-[4rem] -mb-2 arena" :class="darkmode ? ' bg-sky-600' : 'bg-yellow-100'"></div>
+      <div class="w-full h-[4rem] -mb-2 arena" :class="darkmode ? ' bg-sky-500' : 'bg-yellow-100'"></div>
 
       <!-- tegnologies -->
       <div class="flex justify-center absolute w-full">
@@ -43,7 +55,8 @@
                   <!-- vue -->
                   <div class="force_vue">
                     <div class="-translate-y-[16rem] sm:-translate-x-[4rem]">
-                      <svg class="logo sm:w-16 sm:h-16 w-10 h-10 rotate-[0deg]" viewBox="0 0 128 128" data-v-e0ef77de="">
+                      <svg class="logo sm:w-16 sm:h-16 w-10 h-10 rotate-[0deg]" viewBox="0 0 128 128"
+                        data-v-e0ef77de="">
                         <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
                           data-v-e0ef77de=""></path>
                         <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-e0ef77de="">
@@ -52,10 +65,13 @@
                     </div>
                   </div>
                   <!-- tailwind -->
-                  <div class="sm:-translate-x-[12rem] -translate-x-[4rem] translate-y-[5rem] sm:-translate-y-[3rem] flex flex-col items-center">
-                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full" style=" transform: rotateX(-0.2turn);" >
+                  <div
+                    class="sm:-translate-x-[12rem] -translate-x-[4rem] translate-y-[5rem] sm:-translate-y-[3rem] flex flex-col items-center">
+                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full"
+                      style=" transform: rotateX(-0.2turn);">
                     </div>
-                    <div class=" sm:w-16 sm:h-16 w-10 h-10 bg-blue-100 rounded-lg -translate-y-[4.8rem] sm:-translate-y-[7rem]">
+                    <div
+                      class=" sm:w-16 sm:h-16 w-10 h-10 bg-blue-100 rounded-lg -translate-y-[4.8rem] sm:-translate-y-[7rem]">
                       <svg class=" sm:w-16 sm:h-16 w-10 h-10 -rotate-[30deg]" id="Layer_1" data-name="Layer 1"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 73.29">
                         <defs>
@@ -73,8 +89,10 @@
 
                   </div>
                   <!-- BOOSTRAP -->
-                  <div class= " sm:translate-x-[12rem] translate-x-[4rem] translate-y-[5rem] sm:-translate-y-[3rem] flex flex-col items-center">
-                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full" style=" transform: rotateX(-0.2turn);">
+                  <div
+                    class=" sm:translate-x-[12rem] translate-x-[4rem] translate-y-[5rem] sm:-translate-y-[3rem] flex flex-col items-center">
+                    <div class=" opacity-40 w-20 h-20 sm:w-24 sm:h-24 bg-gray-800 rounded-full"
+                      style=" transform: rotateX(-0.2turn);">
                     </div>
                     <div
                       class=" sm:w-16 sm:h-16 w-10 h-10 bg-purple-800 rounded-lg flex justify-center items-center font-bold text-white sm:text-5xl text-2xl -translate-y-[4.8rem] sm:-translate-y-[7rem]">
@@ -104,16 +122,7 @@
 
     <!-- jedie -->
     <Exodya :darkmode="darkmode"></Exodya>
-
-    <!-- sable de exodya -->
-
-
-
-
-
-
-
-    <div class="w-full h-[24rem]  " :class="darkmode ? ' bg-sky-600' : 'bg-yellow-100'"></div>
+    <div class="w-full h-[24rem]  " :class="darkmode ? ' bg-sky-500' : 'bg-yellow-100'"></div>
   </div>
 
 
@@ -128,7 +137,23 @@ import Exodya from './Monitos/Exodya.vue'
 export default {
   data() {
     return {
-      light_saber_obi_wan : false
+      light_saber: false,
+      stars: [
+        { position: 'translate-y-[-8rem] translate-x-[28rem]' },
+        { position: '-translate-y-[7rem] -translate-x-[30rem]' },
+        { position: 'translate-y-[10rem] translate-x-[10rem]' },
+        { position: '-translate-y-[2rem] translate-x-[18rem]' },
+        { position: '-translate-y-[5rem] translate-x-[25rem]' },
+        { position: 'translate-y-[6rem] -translate-x-[20rem]' },
+        { position: '-translate-y-[4rem] -translate-x-[50rem]' },
+        { position: 'translate-y-[0rem] -translate-x-[60rem]' },
+        { position: '-translate-y-[8rem] -translate-x-[64rem]' },
+        { position: 'translate-y-[12rem] -translate-x-[54rem]' },
+        { position: 'translate-y-[6rem] -translate-x-[57rem]' },
+        { position: 'translate-y-[3rem] -translate-x-[26rem]' },
+        { position: 'translate-y-[9rem] -translate-x-[35rem]' },
+        { position: '-translate-y-[4rem] -translate-x-[15rem]' },
+      ]
     }
   },
   components: {
@@ -148,8 +173,8 @@ export default {
 
       let altura = this.$refs.sky.offsetTop;
 
-      if (altura - 200 < topScroll ) {
-        return this.light_saber_obi_wan = true
+      if (altura - 200 < topScroll) {
+        return this.light_saber = true
       }
     }
   },

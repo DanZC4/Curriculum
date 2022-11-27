@@ -82,7 +82,7 @@
         <!-- hoja del sable -->
 
         <div class=" rounded-r-full h-2.5 bg-green-200 border-y-4 border-r-4 duration-150 border-green-500 shadow-green-400 shadow "
-            :class="light_saber_obi_wan ? 'w-80' : 'w-0 opacity-0'"></div>
+            :class="light_saber ? 'w-80' : 'w-0 opacity-0'"></div>
 
     </div>
 </template>
@@ -90,7 +90,7 @@
 <script>
 export default {
     props : {
-        light_saber_obi_wan: Boolean,
+        light_saber: Boolean,
     }
 }
 </script>
