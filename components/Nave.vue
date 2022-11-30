@@ -5,7 +5,7 @@
         <div class="px-0 sm:px-24 md:px-36 lg:px-48 w-full  max-w-12xl m-auto flex justify-between items-center">
           <div>
             <h1 class=" hidden ant:flex text-gray-100 font-bold text-2xl  py-2">
-              DANIEL ZAMBRANO CAMARENA 
+              DANIEL ZAMBRANO 
             </h1>
             <h1 class="ant:hidden text-gray-100 font-bold text-2xl px-6 py-2">
               DZC

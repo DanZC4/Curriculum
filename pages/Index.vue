@@ -2,8 +2,9 @@
   <div class="flex justify-center transform duration-300 bg-gray-100  text-gray-800">
     <div class="w-full ">
       <AboutMe :darkmode="darkmode" />
-      <Proyect :darkmode="darkmode" :pages="pages" />
+
       <Abilities :darkmode="darkmode" :tecnologies="tecnologies" />
+      <Proyect :darkmode="darkmode" :pages="pages" />
       <Contact :darkmode="darkmode" />
     </div>
   </div>
