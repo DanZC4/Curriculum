@@ -1,25 +1,21 @@
 <template>
   <div>
-    <transition name="page">
-      <Nave
-        :darkmode="darkmode"
-        @darkmode="darkmode = !darkmode"
-      />
-    </transition>
-        <transition name="page">
-      <Page
-        :darkmode="darkmode"
-      />
-    </transition>
-    <transition name="page">
-      <Footer
-        :darkmode="darkmode"
-      />
-    </transition>
+
+    <Nave :darkmode="darkmode" @darkmode="darkmode = !darkmode" />
+
+    <Index :darkmode="darkmode" />
+
+    <Footer :darkmode="darkmode" />
+
   </div>
 </template>
 <script>
+import Index from "../pages/Index.vue"
+
 export default {
+  components: {
+    Index
+  },
   data() {
     return {
       darkmode: false,
@@ -27,14 +23,5 @@ export default {
   },
 };
 </script>
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 2s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
-</style>
+
 

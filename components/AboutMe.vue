@@ -21,7 +21,20 @@
         </nav>
       </div>
       <div class="flex flex-col items-center mb-8 sm:pt-16">
-        <kunai></kunai>
+        <div class="w-60 h-60 rounded-full overflow-hidden m-auto shadow-lg" >
+            <div
+                class="before:content-[''] before:w-60 before:h-60   before:rounded-full before:z-30   before:bg-gray-600/25 before:absolute ">
+                <img src="~/static/img/Daniel.jpg" alt="" class="
+              h-full
+              w-full
+              transform
+
+              object-cover
+              z-20
+            " />
+            </div>
+
+        </div>
         <h2 class="p-4 font-bold text-4xl">Ninja Web Develoment</h2>
       </div>
       <div class="p-4 duration-300 " >
@@ -48,11 +61,9 @@
 
 <script>
 
-import kunai from './Icons/Kunai.vue'
-
 export default {
   components: {
-    kunai
+
   },
   props: {
     darkmode: Boolean,
