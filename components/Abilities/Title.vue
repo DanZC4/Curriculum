@@ -1,6 +1,6 @@
 <template>
     <!-- Title -->
-    <div class="w-full h-[22rem] sm:h-[28rem]">
+    <div class="w-full h-[16rem] sm:h-[28rem]">
         <!-- stars -->
 
         <div class="flex justify-center overflow-hidden">
@@ -10,21 +10,15 @@
                         class="text-yellow-600">k</span>i<span class="text-gray-500">l</span><span
                         class="text-yellow-600">l</span>s</h2>
                 <div class="hidden sm:flex sm:w-[28rem]">
-                    <component :is="darkmode ? 'DarthVaderSable' : 'ObiWanSable'" :light_saber="light_saber"
-                        @sablerOn="light_saber = !light_saber"></component>
+                    <slot></slot>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import ObiWanSable from './Sables/ObiWanSable.vue';
-import DarthVaderSable from './Sables/DarthVaderSable.vue'
+
 export default {
-    components: {
-        ObiWanSable,
-        DarthVaderSable,
-    },
     props: {
         darkmode: Boolean,
         light_saber: Boolean

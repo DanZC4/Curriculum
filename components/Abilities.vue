@@ -25,17 +25,23 @@
         </div>
       </div>
     </div>
-    
-    <Title :darkmode="darkmode" :light_saber="light_saber"></Title>
+
+    <Title :darkmode="darkmode" :light_saber="light_saber">
+      <template v-slot>
+        <component :is="darkmode ? 'DarthVaderSable' : 'ObiWanSable'" :light_saber="light_saber"
+          @sablerOn="light_saber = !light_saber"></component>
+      </template>
+    </Title>
 
     <!-- suelo -->
     <div class="w-full ">
-      <div class="w-full h-[2rem] -mb-10 montanas " :class="darkmode ? ' bg-sky-700' : 'bg-orange-200'"></div>
+      <div class="w-full h-[5rem] -mb-[2rem] montana1 " :class="darkmode ? ' bg-sky-800' : 'bg-orange-300'"></div>
+      <div class="w-full h-[3rem] -mb-10 montanas " :class="darkmode ? ' bg-sky-700' : 'bg-orange-200'"></div>
       <div class="w-full h-[4rem] -mb-2 arena" :class="darkmode ? ' bg-sky-500' : 'bg-yellow-100'"></div>
 
       <!-- tegnologies -->
       <Tegnologies></Tegnologies>
-     
+
 
     </div>
 
@@ -53,6 +59,8 @@
 import Exodya from './Abilities/Monitos/Exodya.vue'
 import Title from './Abilities/Title.vue'
 import Tegnologies from './Abilities/Tegnologies.vue';
+import ObiWanSable from './Abilities/Sables/ObiWanSable.vue';
+import DarthVaderSable from './Abilities/Sables/DarthVaderSable.vue'
 
 export default {
   data() {
@@ -79,7 +87,9 @@ export default {
   components: {
     Exodya,
     Title,
-    Tegnologies
+    Tegnologies,
+    ObiWanSable,
+    DarthVaderSable,
   },
 
   props: {
@@ -124,7 +134,7 @@ export default {
   clip-path: polygon(0% 10%, 8% 11%, 11% 21%, 22% 19%, 29% 17%, 34% 7%, 45% 3%, 48% 11%, 52% 14%, 55% 24%, 63% 24%, 67% 24%, 74% 20%, 77% 16%, 83% 13%, 89% 14%, 93% 21%, 100% 29%, 100% 100%, 0 100%);
 }
 
-
-
-
+.montana1 {
+  clip-path: polygon(0 100%, 0 46%, 7% 32%, 11% 25%, 17% 15%, 22% 6%, 29% 3%, 35% 3%, 40% 6%, 47% 14%, 51% 23%, 53% 33%, 55% 42%, 58% 51%, 60% 66%, 67% 74%, 74% 77%, 81% 79%, 92% 81%, 100% 87%, 100% 100%);
+}
 </style>
