@@ -1,13 +1,25 @@
 <template>
-    <div class="flex justify-center absolute w-full h-[17rem] -translate-y-[15.5rem] overflow-hidden p-2">
+    <div class="flex justify-center absolute w-full h-[24rem] -translate-y-[15.5rem] overflow-hidden p-2 ">
         <div class="px-0  max-w-12xl flex items-end">
             <div class=" duration-300  text-gray-800">
                 <div class="">
                     <div class=" flex justify-start  ">
                         <div class="flex">
+                            <!-- js -->
+                            <div class="force_js">
+                                <div class="translate-x-[3rem]">
+                                    <svg class="logo w-16 h-16" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 630 630">
+                                        <rect width="630" height="630" fill="#f7df1e" />
+                                        <path
+                                            d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z" />
+                                    </svg>
+                                </div>
+
+                            </div>
                             <!-- vue -->
                             <div class="force_vue">
-                                <div class="-translate-x-[8rem]">
+                                <div class="-translate-x-[7rem] -translate-y-[9rem]">
                                     <svg class="logo w-16 h-16" viewBox="0 0 128 128" data-v-e0ef77de="">
                                         <path fill="#42b883"
                                             d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
@@ -20,10 +32,24 @@
 
                             </div>
 
+                            <!-- html -->
+                            <div class="force_html">
+                                <div class=" -translate-y-[19rem] -translate-x-[4rem] flex flex-col items-center">
+                                    <svg class=" w-16 h-16 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                                        <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                                        <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                                        <path fill="#ecedee"
+                                            d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z" />
+                                        <path fill="#fff"
+                                            d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z" />
+                                    </svg>
+                                </div>
+
+                            </div>
                             <!-- tailwind -->
                             <div class="force_tailwind">
-                                <div class="-translate-y-[5rem]  flex flex-col items-center">
-                                    <div class=" w-16 h-16  bg-blue-100 rounded-lg -translate-y-[7rem]">
+                                <div class="-translate-y-[19rem] translate-x-[4rem] flex flex-col items-center">
+                                    <div class=" w-16 h-16  bg-blue-100 rounded-lg ">
                                         <svg class=" w-16 h-16  -rotate-[30deg]" id="Layer_1" data-name="Layer 1"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 73.29">
                                             <defs>
@@ -39,12 +65,26 @@
                                         </svg>
                                     </div>
                                 </div>
-
                             </div>
 
+
+
+                            <!-- css -->
+                            <div class="force_css">
+                                <div class=" translate-x-[7rem]  -translate-y-[9rem]">
+                                    <svg class=" w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                                        <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52" />
+                                        <path fill="#30a9dc" d="M226 472l149-41 35-394H226" />
+                                        <path fill="#ecedee"
+                                            d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z" />
+                                        <path fill="#fff"
+                                            d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z" />
+                                    </svg>
+                                </div>
+                            </div>
                             <!-- laravel -->
                             <div class="force_laravel">
-                                <div class=" translate-x-[8rem]">
+                                <div class=" -translate-x-[3rem]">
                                     <svg class=" w-16 h-16 -translate-y-[0rem] translate-x-[0rem]"
                                         viewBox="0 -.11376601 49.74245785 51.31690859"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +104,43 @@
 </template>
 
 <style>
+
+.force_js {
+    animation: force_js 12s ease-in-out infinite;
+}
+
+@keyframes force_js {
+
+    0% {
+        transform: translate(0rem, 0rem);
+    }
+
+    17% {
+        transform: translate(14rem, 0rem);
+
+    }
+
+    33% {
+        transform: translate(20rem, -9rem);
+    }
+
+    50% {
+        transform: translate(13rem, -19rem);
+    }
+    67% {
+        transform: translate(1rem, -19rem);
+    }
+    83% {
+        transform: translate(-6rem, -9rem);
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+    }
+} 
+
+
 .force_vue {
-    animation: force_vue 8s ease-in-out infinite;
+    animation: force_vue 12s ease-in-out infinite;
 }
 
 @keyframes force_vue {
@@ -74,65 +149,163 @@
         transform: translate(0rem, 0rem);
     }
 
+    17% {
+        transform: translate(6rem, 9rem);
+
+    }
+
     33% {
-        transform: translate(12rem, -12rem);
-
+        transform: translate(20rem, 9rem);
     }
 
-    66% {
-        transform: translate(24rem, 0rem);
+    50% {
+        transform: translate(26rem, 0rem);
     }
-
+    67% {
+        transform: translate(19rem, -10rem);
+    }
+    83% {
+        transform: translate(7rem, -10rem);
+    }
     100% {
         transform: translate(0rem, 0rem);
     }
 }
 
-.force_tailwind {
-    animation: force_tailwind 8s ease-in-out infinite;
+
+ .force_html {
+    animation: force_html 12s ease-in-out infinite;
 }
 
-@keyframes force_tailwind {
+@keyframes force_html {
 
     0% {
         transform: translate(0rem, 0rem);
     }
 
+    17% {
+        transform: translate(-7rem, 10rem);
+
+    }
+
     33% {
-        transform: translate(12rem, 12rem);
+        transform: translate(-1rem, 19rem);
+    }
+
+    50% {
+        transform: translate(13rem, 19rem);
+    }
+    67% {
+        transform: translate(19rem, 10rem);
+    }
+    83% {
+        transform: translate(12rem, 0rem);
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+    }
+}
+
+
+
+.force_tailwind {
+    animation: force_tailwind 12s ease-in-out infinite;
+}
+
+@keyframes force_tailwind {
+
+   
+    0% {
+        transform: translate(0rem, 0rem);
+    }
+
+    17% {
+        transform: translate(-12rem, 0rem);
 
     }
 
-    66% {
-        transform: translate(-12em, 12rem);
+    33% {
+        transform: translate(-19rem, 10rem);
     }
 
+    50% {
+        transform: translate(-13rem, 19rem);
+    }
+    67% {
+        transform: translate(1rem, 19rem);
+    }
+    83% {
+        transform: translate(7rem, 10rem);
+    }
+    100% {
+        transform: translate(0rem, 0rem);
+    }
+}
+
+.force_css {
+    animation: force_css 12s ease-in-out infinite;
+}
+
+@keyframes force_css {
+
+   
+    0% {
+        transform: translate(0rem, 0rem);
+    }
+
+    17% {
+        transform: translate(-7rem, -10rem);
+
+    }
+
+    33% {
+        transform: translate(-19rem, -10rem);
+    }
+
+    50% {
+        transform: translate(-26rem, 0rem);
+    }
+    67% {
+        transform: translate(-20rem, 9rem);
+    }
+    83% {
+        transform: translate(-6rem, 9rem);
+    }
     100% {
         transform: translate(0rem, 0rem);
     }
 }
 
 .force_laravel {
-    animation: force 8s ease-in-out infinite;
+    animation: force_laravel 12s ease-in-out infinite;
 }
 
-@keyframes force {
+@keyframes force_laravel {
 
-    0% {
+       0% {
         transform: translate(0rem, 0rem);
+    }
+
+    17% {
+        transform: translate(6rem, -9rem);
+
     }
 
     33% {
-        transform: translate(-24rem, 0rem);
-
+        transform: translate(-1rem, -19rem);
     }
 
-    66% {
-        transform: translate(-12rem, -12rem);
+    50% {
+        transform: translate(-13rem, -19rem);
     }
-
+    67% {
+        transform: translate(-20rem, -9rem);
+    }
+    83% {
+        transform: translate(-14rem, 0rem);
+    }
     100% {
         transform: translate(0rem, 0rem);
     }
-}
+}  
 </style>

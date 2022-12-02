@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-center transform duration-300 bg-gray-100  text-gray-800">
     <div class="w-full ">
+
+      <Portada :darkmode="darkmode" />
       <AboutMe :darkmode="darkmode" />
 
       <Abilities :darkmode="darkmode" :tecnologies="tecnologies" />
