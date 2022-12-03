@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full absolute translate-y-[34rem] overflow-x-hidden">
+    <div class="w-full absolute translate-y-[15rem] -translate-x-[20rem]">
         <div class=" ">
             <div class=" w-52 h-auto mx-auto">
                 <!-- head -->
-                <div class="levitato">
+                <div class="">
                     <div class="flex flex-col items-center ">
                         <!-- hat -->
                         <div class="translate-y-5 z-30">
@@ -39,11 +39,11 @@
                                 :class="darkmode ? 'bg-gray-900' : 'bg-gray-900'">
                                 <!-- Glases -->
                                 <div class="flex space-x-1 -mt-0.5 ml-1">
-                                    <div class="w-5 h-3.5  border-2  rounded-tl rounded-br rounded-tr-lg rounded-bl-lg "
-                                        :class="darkmode ? blink ? 'bg-gray-900 border-gray-900' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-gray-900'">
+                                    <div class="w-5 h-3.5  border-[0.15rem]  rounded-tr-lg rounded-bl-lg rounded-tl-lg rounded-br-lg rotate-[10deg]"
+                                        :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-black'">
                                     </div>
-                                    <div class="w-5 h-3.5  border-2  rounded-tr rounded-bl rounded-tl-lg rounded-br-lg "
-                                        :class="darkmode ? blink ? 'bg-gray-900 border-gray-900' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-gray-900'">
+                                    <div class="w-5 h-3.5  border-[0.15rem]  rounded-tr-lg rounded-bl-lg rounded-tl-lg rounded-br-lg  -rotate-[10deg]"
+                                        :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-black'">
                                     </div>
                                 </div>
 
@@ -136,7 +136,13 @@
                                 </div>
                             </div>
                             <div
-                                class="absolute w-[1.1rem] h-[2rem] bg-gray-900 z-10 translate-x-[2.15rem] translate-y-[3rem]">
+                                class="absolute w-[1.1rem] h-[1.58rem] bg-gray-900 z-10 translate-x-[2.15rem] translate-y-[3rem]">
+                            </div>
+                            <div
+                                class="absolute w-[0.85rem] h-[0.60rem] bg-gray-900 z-10 translate-x-[2.275rem] translate-y-[4.4rem]">
+                            </div>
+                            <div
+                                class="absolute w-[0.98rem] border-b-[1.2rem] border-b-gray-900 border-x-[0.10rem] border-x-transparent z-10 translate-x-[2.21rem] translate-y-[4.9rem]">
                             </div>
 
                             <!-- las weas de la gabardina -->
@@ -174,6 +180,12 @@
                             <!--cinto-->
                             <div class="bg-amber-800 h-2 w-[3.9rem] -mt-[0.6rem] translate-x-[0.735rem]">
                             </div>
+                            <div
+                                class="w-[7rem] h-[0rem]  border-b-[11rem] border-b-amber-800 border-x-[1.55rem] border-x-transparent -translate-x-[0.8rem] absolute">
+                                <div
+                                    class="w-[4rem] h-[0rem]  border-b-[11rem] border-b-gray-900 border-x-[1.55rem] border-x-transparent -translate-x-[0.08rem] absolute">
+                                </div>
+                            </div>
 
 
 
@@ -184,7 +196,7 @@
                     </div>
                 </div>
 
-                <div class="w-52 h-52 bg-gray-900 rounded-full mx-auto shadow-size -mt-6 opacity-40" style=""></div>
+
             </div>
 
 
