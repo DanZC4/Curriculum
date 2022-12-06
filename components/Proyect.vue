@@ -2,7 +2,7 @@
   <div class="bg-gray-800">
     <div>
 
-      <div class="h-[3rem] w-full bg-yellow-100  arenadeabajo z-10 -mt-1"></div>
+      <div class="h-[3rem] w-ful  arenadeabajo z-10 -mt-1" :class="darkmode ? ' bg-sky-500' : 'bg-yellow-100'"></div>
     
      
     </div>
