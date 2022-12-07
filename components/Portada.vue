@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center overflow-hidden">
+    <div class="flex justify-center overflow-hidden bg-amber-100">
         
         <div class="px-0 sm:px-24 md:px-36 lg:px-48 pt-24 ant:pt-36 max-w-12xl">
             <div class=" text-gray-900 ant:border-b-2 border-gray-800">
@@ -23,19 +23,8 @@
                 </nav>
             </div>
             <div class="flex flex-col items-center mb-8 sm:pt-16">
-                <div class="w-60 h-60 rounded-full overflow-hidden m-auto shadow-lg">
-                    <div
-                        class="before:content-[''] before:w-60 before:h-60   before:rounded-full before:z-30   before:bg-gray-600/25 before:absolute ">
-                        <img src="~/static/img/Daniel.jpg" alt="" class="
-                h-full
-                w-full
-                transform
-  
-                object-cover
-                z-20
-              " />
-                    </div>
-
+                <div class="w-60 h-60 rounded border-[1rem] border-orange-900 overflow-hidden m-auto shadow-lg bg-orange-400">
+                    <Ghost :darkmode="darkmode"></Ghost>
                 </div>
                 <h2 class="p-4 font-bold text-4xl">Ninja Web Develoment</h2>
             </div>
@@ -58,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <Ghost :darkmode="darkmode"></Ghost>
+       
     </div>
 </template>
   

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full absolute translate-y-[15rem] -translate-x-[20rem]">
+    <div class="w-full  translate-y-[0rem] -translate-x-[0rem]">
         <div class="" style="opacity: 0.9;">
             <div class=" w-52 h-auto mx-auto">
                 <!-- head -->
@@ -12,10 +12,10 @@
                                 :class="darkmode ? 'border-b-gray-800' : 'border-b-gray-700'">
                                 <div class="flex justify-between">
                                     <div
-                                        class="w-[1.5rem] h-[1.5rem] rounded-full bg-gray-100 -mt-[0.6rem] -ml-[0.6rem]">
+                                        class="w-[1.5rem] h-[1.5rem] rounded-full bg-orange-400 -mt-[0.6rem] -ml-[0.6rem]">
                                     </div>
                                     <div
-                                        class="w-[1.5rem] h-[1.5rem] rounded-full bg-gray-100 -mt-[0.6rem] -mr-[0.6rem]">
+                                        class="w-[1.5rem] h-[1.5rem] rounded-full bg-orange-400 -mt-[0.6rem] -mr-[0.6rem]">
                                     </div>
                                 </div>
 
