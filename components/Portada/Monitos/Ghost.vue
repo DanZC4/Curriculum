@@ -1,6 +1,6 @@
 <template>
     <div class="w-full absolute translate-y-[15rem] -translate-x-[20rem]">
-        <div class="ghost">
+        <div class="" style="opacity: 0.9;">
             <div class=" w-52 h-auto mx-auto">
                 <!-- head -->
                 <div class="">
@@ -35,15 +35,17 @@
                         <div class="w-12 h-14 rounded-full  flex items-center border-b-2  border-gray-800 z-20"
                             :class="darkmode ? 'bg-gray-900 border-gray-900' : 'bg-gray-900 border-gray-900'"
                             @click="toBlink">
-                            <div class="w-[3.25rem] h-[0.75rem]   absolute rounded-sm -ml-0.5 z-20 "
+                            <div class="w-[3.25rem] h-[0.75rem]  absolute rounded-sm -ml-0.5 z-20 "
                                 :class="darkmode ? 'bg-gray-900' : 'bg-gray-900'">
                                 <!-- Glases -->
-                                <div class="flex space-x-1  ml-1">
-                                    <div class="w-5 h-3  border-[0.15rem]  rounded rotate-[10deg]"
-                                        :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-black'">
-                                    </div>
-                                    <div class="w-5 h-3  border-[0.15rem]  rounded  -rotate-[10deg]"
-                                        :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-800 border-gray-800' : 'bg-yellow-200 border-black'">
+                                <div class="eyesMove">
+                                    <div class="flex space-x-1  ml-1">
+                                        <div class="w-5 h-3  border-[0.15rem]  rounded rotate-[10deg]"
+                                            :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-900 border-gray-900' : 'bg-yellow-200 border-black'">
+                                        </div>
+                                        <div class="w-5 h-3  border-[0.15rem]  rounded  -rotate-[10deg]"
+                                            :class="darkmode ? blink ? 'bg-gray-900 border-black' : 'bg-yellow-200 border-black' : blink ? 'bg-gray-900 border-gray-900' : 'bg-yellow-200 border-black'">
+                                        </div>
                                     </div>
                                 </div>
 
@@ -268,36 +270,23 @@ export default {
     transform: rotateY(180deg);
 }
 
-.levitato {
-    animation: levitar 3s ease-in-out infinite;
+.eyesMove {
+    animation: eyesMove 4s ease-in-out infinite;
 }
 
-@keyframes levitar {
+@keyframes eyesMove {
 
     0%,
     100% {
-        opacity: translateY(0rem);
+        transform: translateX(0rem);
     }
 
-    50% {
-        opacity: translateY(1rem);
-    }
-}
-
-.ghost {
-    animation: ghost 36s ease-in-out infinite;
-}
-
-@keyframes ghost {
-
-    0%,
-    100% {
-        opacity: 0.92;
+    33% {
+        transform: translateX(0.10rem);
     }
 
-    50% {
-        opacity: 0;
-        ;
+    66% {
+        transform: translateX(-0.10rem);
     }
 
 }
